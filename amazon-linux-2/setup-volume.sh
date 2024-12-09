@@ -1,6 +1,8 @@
 #!/bin/bash
+# This script formats and mounts a new persistent volume to the instance.
+# Then makes a test file in the volume to verify the setup.
 
-DEVICE="/dev/sdb"
+DEVICE="/dev/sdb" # Change this to correct device name
 MOUNT_POINT="/data"
 
 {

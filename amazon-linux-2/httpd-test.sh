@@ -1,9 +1,9 @@
 #!/bin/bash
-# Use this for your user data (script from top to bottom)
-# install httpd (Linux 2 version)
+# This script installs and starts an Apache web server.
+# It also creates a simple HTML file to display the hostname of the instance.
 
 INDEX_HTML_LOCATION="/var/www/html/index.html"
-HTML_CONTENT="<h1> $(hostname -f)</h1>"
+HTML_CONTENT="<h1>Hello from $(hostname -f)</h1>"
 
 {
   sudo yum update -y
